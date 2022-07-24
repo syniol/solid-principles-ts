@@ -17,7 +17,7 @@ first introduced in his 2000 paper Design Principles and Design Patterns.
 
 #### Author
 
- * [Hadi Tajallaei](mailto:hadi@syniol.com)
+ * [Hadi Tajallaei](mailto:hadi@syniol.com?subject="Solid Principles in TypeScript Question")
 
 
 #### Credit
