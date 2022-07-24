@@ -13,7 +13,7 @@ export class AmazonS3Storage implements Uploader {
         cluster: string,
         fileName: string,
         content: string,
-        directory?: string
+        directory?: string,
     ): Promise<void> {
         const path = directory ? `${directory}/${fileName}` : fileName
 

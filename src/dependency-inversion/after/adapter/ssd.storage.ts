@@ -14,11 +14,13 @@ export class SSDStorage<T> implements Uploader {
         cluster: string,
         fileName: string,
         content: string,
-        directory?: string
+        directory?: string,
     ): Promise<void> {
         const writeAsync = promisify(this.#client.writeFile)
 
-        const path = `${cluster}${directory ? `/${directory}` : ''}/${fileName}`
+        const path = `${cluster}${
+            directory ? `/${directory}` : ''
+        }/${fileName}`
 
         await writeAsync(path, content, { encoding: 'utf8' })
     }

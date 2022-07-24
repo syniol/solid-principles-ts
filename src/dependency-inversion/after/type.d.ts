@@ -3,7 +3,6 @@ export declare interface Uploader {
         cluster: string,
         fileName: string,
         content: string,
-        directory?: string
+        directory?: string,
     ): void
-
 }

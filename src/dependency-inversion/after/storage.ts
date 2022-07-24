@@ -1,5 +1,5 @@
 import { Uploader } from './type'
-import { SSDStorage } from './adapter/ssd.storage'
+import { SSDStorage } from './adapter'
 
 export class Storage implements Uploader {
     readonly #client: Uploader
@@ -12,8 +12,13 @@ export class Storage implements Uploader {
         cluster: string,
         fileName: string,
         content: string,
-        directory?: string
+        directory?: string,
     ): Promise<void> {
-        return this.#client.upload(cluster, fileName, content, directory)
+        return this.#client.upload(
+            cluster,
+            fileName,
+            content,
+            directory,
+        )
     }
 }

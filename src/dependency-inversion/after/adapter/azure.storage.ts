@@ -13,7 +13,7 @@ export class MicrosoftAzureStorage implements Uploader {
         cluster: string,
         fileName: string,
         content: string,
-        directory?: string
+        directory?: string,
     ): Promise<void> {
         await new Promise((resolve, reject) => {
             this.#client.createFileFromText(
@@ -27,7 +27,7 @@ export class MicrosoftAzureStorage implements Uploader {
                     }
 
                     resolve(response)
-                }
+                },
             )
         })
     }
