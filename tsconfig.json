@@ -4,8 +4,10 @@
 
     /* Basic Options */
     "target": "es6",
-    "module": "es6",
+    "module": "commonjs",
      "lib": [
+       "ES6",
+       "ES5",
        "ESNext"
      ],
     // "allowJs": true,                             /* Allow javascript files to be compiled. */

@@ -1,12 +1,12 @@
 {
   "name": "solid-principles-typescript",
   "version": "1.0.0",
-  "description": "SOLID Principles demonstration in TypeScript",
+  "description": "SOLID Principles demonstration in TypeScript on Node.js runtime",
   "main": "src/index.ts",
   "repository": "https://github.com/syniol/solid-principles-ts.git",
   "author": "Hadi Tajallaei <hadi@syniol.com>",
-  "license": "MIT",
-  "private": false,
+  "license": "CC BY-NC-ND 3.0",
+  "private": true,
   "scripts": {
     "test": "jest"
   },

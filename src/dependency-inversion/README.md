@@ -23,7 +23,7 @@ File System library of Node unless a new adapter is given.
 
 ## Acceptance Criteria
  * It should follow a same abstract layer for Upload action for Storage
- * It should have following Adapters:
+ * It should have the following Adapters:
     * Microsoft Azure Storage
     * Amazon S3
     * Native Node FileSystem _(Default)_

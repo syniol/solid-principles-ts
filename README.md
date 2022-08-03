@@ -1,4 +1,4 @@
-# SOLID Principles in TypeScript
+# SOLID Principles Implementation in TypeScript
 In object-oriented computer programming, SOLID is a mnemonic acronym for 
 five design principles intended to make software designs more understandable, 
 flexible, and maintainable. The principles are a subset of many principles 
