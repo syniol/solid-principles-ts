@@ -23,9 +23,9 @@ service created to handle upload to AWS S3. We wish to use this library in
 microservices deployed on Azure and legacy on premise servers for disaster 
 strategy.
 
-<div style="text-align:center">
-   <img style="max-width: 100%;" alt="Diagram for Scenario of refactoring" src="https://raw.githubusercontent.com/syniol/solid-principles-ts/main/diagrams/dependency-inversion.drawio.png">
-</div>
+<p style="text-align:center">
+   <img alt="Diagram for Scenario of refactoring" src="https://raw.githubusercontent.com/syniol/solid-principles-ts/main/diagrams/dependency-inversion.drawio.png">
+</p>
 
 ## Background
 Imagine a scenario where in our code base we have a service to store files
