@@ -23,8 +23,8 @@ service created to handle upload to AWS S3. We wish to use this library in
 microservices deployed on Azure and legacy on premise servers for disaster 
 strategy.
 
-![Alt text](https://raw.github.com/syniol/brief.svg?sanitize=true)
-<img src="https://raw.github.com/syniol/brief.svg?sanitize=true">
+![Alt text](https://raw.githubusercontent.com/syniol/solid-principles-ts/main/diagrams/dependency-inversion.drawio.svg?sanitize=true)
+<img src="https://raw.githubusercontent.com/syniol/solid-principles-ts/main/diagrams/dependency-inversion.drawio.svg?sanitize=true">
 
 
 ## Background
