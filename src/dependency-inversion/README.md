@@ -27,6 +27,7 @@ strategy.
    <img alt="Diagram for Scenario of refactoring" src="https://raw.githubusercontent.com/syniol/solid-principles-ts/main/diagrams/dependency-inversion.drawio.png">
 </p>
 
+
 ## Background
 Imagine a scenario where in our code base we have a service to store files
 which is currently tied to AWS S3. Every file upload in our code base uses
