@@ -24,7 +24,7 @@ microservices deployed on Azure and legacy on premise servers for disaster
 strategy.
 
 <div style="text-align:center">
-   <img alt="Diagram for Scenario of refactoring" src="https://raw.githubusercontent.com/syniol/solid-principles-ts/main/diagrams/dependency-inversion.drawio.png">
+   <img style="max-width: 100%;" alt="Diagram for Scenario of refactoring" src="https://raw.githubusercontent.com/syniol/solid-principles-ts/main/diagrams/dependency-inversion.drawio.png">
 </div>
 
 ## Background
