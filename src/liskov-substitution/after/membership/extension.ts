@@ -1,6 +1,5 @@
-export interface Extension {
-    extendMembership(): Promise<void>
-}
+import { Extension } from './type'
+
 
 export class MembershipExtension implements Extension {
     public async extendMembership(): Promise<void> {

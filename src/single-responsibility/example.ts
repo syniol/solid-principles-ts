@@ -1,4 +1,5 @@
-import { Satellite } from './after';
+import { Satellite } from './after/composition';
+
 import { SatelliteTracker } from './before/satellite-tracker'
 
 describe('Single Responsibility Example', () => {

@@ -11,6 +11,7 @@ behavioral subtyping, that was initially introduced by Barbara
 Liskov in a 1988 conference keynote address 
 titled: `Data abstraction and hierarchy`.
 
+
 ## Relevant Patterns
  * Strategy Pattern
 

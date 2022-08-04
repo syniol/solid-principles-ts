@@ -1,9 +1,8 @@
 import {
-    Expiration,
-    Extension,
     MembershipExpiration,
     MembershipExtension,
 } from './membership'
+import { Expiration, Extension } from './membership/type'
 
 
 export class UserPackage implements Expiration, Extension {

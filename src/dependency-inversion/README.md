@@ -1,5 +1,14 @@
 # Dependency Inversion
-A falsis, abaculus fatalis barcas. Superbus racanas ducunt ad zirbus.
+the dependency inversion principle is a specific methodology for loosely coupling software modules. 
+When following this principle, the conventional dependency relationships established from high-level, 
+policy-setting modules to low-level, dependency modules are reversed, thus rendering high-level 
+modules independent of the low-level module implementation details. The principle states:
+
+ * High-level modules should not import anything from low-level modules. Both should depend on abstractions (e.g., interfaces).
+ * Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
+
+> By dictating that both high-level and low-level objects must depend on the same abstraction, 
+this design principle inverts the way some people may think about object-oriented programming
 
 
 ## Relevant Patterns
@@ -8,7 +17,23 @@ A falsis, abaculus fatalis barcas. Superbus racanas ducunt ad zirbus.
  * __Bridge Pattern__
 
 
+## Scenario: Document Upload Service 
+We have two microservices that are being triggered on daily bases and using 
+service created to handle upload to AWS S3. We wish to use this library in 
+microservices deployed on Azure and legacy on premise servers for disaster 
+strategy.
+
+![Alt text](https://raw.github.com/syniol/brief.svg?sanitize=true)
+<img src="https://raw.github.com/syniol/brief.svg?sanitize=true">
+
+
 ## Background
+Imagine a scenario where in our code base we have a service to store files
+which is currently tied to AWS S3. Every file upload in our code base uses
+this service to call AWS S3 `putObject` action.
+
+
+## Overview
 At the moment we have a service `storage.service.ts`, that is closely 
 coupled with upload service. In case of change of dependency; we then 
 need to refactor many services and due to instantiation of dependency 

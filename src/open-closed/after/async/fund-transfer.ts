@@ -2,6 +2,7 @@ import { FundRequest } from './type'
 import { Bitcoin } from './bitcoin'
 import { CreditCard } from './creditcard'
 
+
 export interface FundTransfer {
     standardTransfer(request: FundRequest): void
 }

@@ -1070,6 +1070,11 @@ cssstyle@^2.3.0:
   dependencies:
     cssom "~0.3.6"
 
+cylon@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/cylon/-/cylon-1.3.0.tgz#0dab55b39df606ec18f9404f35343774c085cfcb"
+  integrity sha512-KwBI4cFz1Qjtuo/Jnm0hjaBP35OAPYjxAhTsRINTLWh4cQo44OWduccspTZgdyy5CyXAS2snzJ8Rsb2zGPKqww==
+
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"

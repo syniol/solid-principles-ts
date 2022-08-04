@@ -1,6 +1,7 @@
 import { FundTransfer } from './fund-transfer'
 import { FundRequest } from './type'
 
+
 export class CreditCard implements FundTransfer {
     public static readonly Name = 'flat_money';
 

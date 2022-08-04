@@ -1,6 +1,7 @@
 import { Uploader } from './type'
 import { SSDStorage } from './adapter'
 
+
 export class Storage implements Uploader {
     readonly #client: Uploader
 

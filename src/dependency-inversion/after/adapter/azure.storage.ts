@@ -2,6 +2,7 @@ import { createFileService, FileService } from 'azure-storage'
 
 import { Uploader } from '../type'
 
+
 export class MicrosoftAzureStorage implements Uploader {
     readonly #client: FileService
 

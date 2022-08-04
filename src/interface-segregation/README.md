@@ -9,20 +9,50 @@ to refactor, change, and redeploy. ISP is one of the five SOLID principles
 of object-oriented design, similar to the High Cohesion Principle of GRASP.
 
 
-## Background
-Noster idoleums ducunt ad turpis.
-
-
 ## Relevant Patterns
-A falsis, devirginato brevis epos. Ridetis nunquam ducunt ad bi-color lacta.
+* __Dependency Injection__
+* __Adapter Pattern__
+* __Bridge Pattern__
+
+
+## Scenario: IoT in Farming
+In this farm we have integrated all devices working on farm with Arduino chip
+and using Node.js compatible library to connect to all devices. All devices are
+connected to Wi-Fi and accessible through one controller service.
+
+
+## Background
+Imagine a scenario where you have created an application for an IoT Farming 
+project that integrated with a Drone that sprays the field, a robot to pick 
+fruits and finally a tractor that works around and inside the field. In this
+example we use [CylonJS](https://cylonjs.com) to in our controller to interact
+with [Arduino](https://www.arduino.cc) integrated in all our devices.
+
+
+## Overview
+At the moment we have an API endpoint given through `controller.ts`. This API 
+service _(Abstract Class)_ been extended by all IoT enabled devices:
+
+ * Drone
+ * Robot
+ * Tractor
+
+Given controller provides universal access signal to all integrated devices. 
+Instantiated service for Drone would also include Fuel Level where only applicable 
+to tractor as Robots and Drones use battery to power up.
 
 
 ## Objective
-Festus, albus ionicis tormentos cito prensionem de varius, fatalis candidatus.
+We need to implement an Interface Segregation principle where common methods are 
+grouped in an abstract layer and defined with an interface designated to each API. 
 
 
 ## Acceptance Criteria
-A falsis, ventus domesticus deus. Nobilis, clemens demolitiones acceleratrix.
+* It should follow a same abstract layer for Upload action for Storage
+* It should have the following Adapters:
+    * Microsoft Azure Storage
+    * Amazon S3
+    * Native Node FileSystem _(Default)_
 
 
 #### Credits

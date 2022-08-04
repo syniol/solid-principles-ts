@@ -1,6 +1,5 @@
-export interface Expiration {
-    isExpired(): boolean
-}
+import { Expiration } from './type'
+
 
 export class MembershipExpiration implements Expiration {
     public isExpired(): boolean {

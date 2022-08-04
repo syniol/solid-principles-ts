@@ -6,6 +6,7 @@ import {
     SSDStorage,
 } from './adapter'
 
+
 describe('Dependency Inversion', () => {
     it('should Adapt to Azure Storage Service', () => {
         expect(new Storage(new MicrosoftAzureStorage())).toBeDefined()

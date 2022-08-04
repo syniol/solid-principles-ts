@@ -2,6 +2,7 @@ import { S3 } from 'aws-sdk'
 
 import { Uploader } from '../type'
 
+
 export class AmazonS3Storage implements Uploader {
     readonly #client: S3
 

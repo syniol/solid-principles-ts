@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "aws-sdk": "^2.935.0",
-    "azure-storage": "^2.10.4"
+    "azure-storage": "^2.10.4",
+    "cylon": "^1.3.0"
   }
 }

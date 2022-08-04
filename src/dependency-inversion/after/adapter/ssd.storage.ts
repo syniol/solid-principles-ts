@@ -3,6 +3,7 @@ import { promisify } from 'util'
 
 import { Uploader } from '../type'
 
+
 export class SSDStorage<T> implements Uploader {
     readonly #client: any
 
