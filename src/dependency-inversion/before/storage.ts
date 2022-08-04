@@ -1,7 +1,7 @@
 import { S3 } from 'aws-sdk'
 
 
-export class StorageService {
+export class Storage {
     public async upload(
         fileName: string,
         content: string,

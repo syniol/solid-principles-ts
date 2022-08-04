@@ -1,5 +1,5 @@
 # Dependency Inversion
-the dependency inversion principle is a specific methodology for loosely coupling software modules. 
+The dependency inversion principle is a specific methodology for loosely coupling software modules. 
 When following this principle, the conventional dependency relationships established from high-level, 
 policy-setting modules to low-level, dependency modules are reversed, thus rendering high-level 
 modules independent of the low-level module implementation details. The principle states:
@@ -34,7 +34,7 @@ this service to call AWS S3 `putObject` action.
 
 
 ## Overview
-At the moment we have a service `storage.service.ts`, that is closely 
+At the moment we have a service `storage.ts`, that is closely 
 coupled with upload service. In case of change of dependency; we then 
 need to refactor many services and due to instantiation of dependency 
 inside a method we also are unable to test our service.
@@ -52,6 +52,14 @@ File System library of Node unless a new adapter is given.
     * Microsoft Azure Storage
     * Amazon S3
     * Native Node FileSystem _(Default)_
+
+
+## UML Diagrams
+Below you can see Storage Service code refactor after implementation of DI.
+
+<p style="text-align:center">
+   <img alt="Diagram for Scenario of refactoring" src="https://raw.githubusercontent.com/syniol/solid-principles-ts/main/diagrams/dependency-inversion-uml.drawio.png">
+</p>
 
 
 #### Credits
